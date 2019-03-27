@@ -37,3 +37,6 @@ for x in range (1, header.Shapes.Count + 1):
 
 
 text = Document.Range().Text
+
+##nameRegex = re.compile(r'MODALITY(.*?)DURATION')
+##modality = nameRegex.search(mainpulate).group(1).strip()
