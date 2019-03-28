@@ -40,7 +40,7 @@ for y in range (2, 10):
 
 
 with open('C:\\Users\\kody.jackson\\Desktop\\' + document_information[0][1] + '_' + document_information[1][1] + '.txt', 'w') as document:
-        for z in range(1, 10):
+        for z in range(0, 10):
                 document.write('%s\n' % document_information[z])
 
 
