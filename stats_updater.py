@@ -21,11 +21,11 @@ for x in range(1, Slides.Count + 1):
         if old_source in Slides(x).Shapes("Source_Text").TextFrame.TextRange.Text:
 
             print("Got the slide")
-                
+
             for shape in range(1, Slides(x).Shapes.Count + 1):
 
                 print("This is shape " + Slides(x).Shapes(shape).Name)
-                    
+
                 if Slides(x).Shapes(shape).HasTextFrame or "TextBox" in Slides(x).Shapes(shape).Name:
 
 
@@ -40,10 +40,10 @@ for x in range(1, Slides.Count + 1):
                             Slides(x).Shapes(shape).TextFrame.TextRange.Replace(FindWhat= key, ReplaceWhat= stats_dict[key], MatchCase = True)
                             Slides(x).Comments.Add(Left= 12, Top= 12, Author= "Kody", AuthorInitials= "KJ", Text= "I replaced a stat here")
                             print("is this working?")
-                        
 
 
-                    
+
+
 
 
     except:
@@ -51,7 +51,7 @@ for x in range(1, Slides.Count + 1):
         print("This slide doesn't have that value")
 
 
-                
+
 ##Presentation.Save()
 ##Presentation.Close()
 ##
